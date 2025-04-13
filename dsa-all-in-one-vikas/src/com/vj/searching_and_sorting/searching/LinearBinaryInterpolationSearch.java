@@ -1,5 +1,7 @@
 package com.vj.searching_and_sorting.searching;
 
+import java.util.Arrays;
+
 public class LinearBinaryInterpolationSearch {
 
 	public static int linearSearch(int[] array, int size, int dataToFound) {
@@ -99,8 +101,15 @@ public class LinearBinaryInterpolationSearch {
 		int length = array.length;
 		int target = 34;
 
+		System.out.println("Array: " + Arrays.toString(array) + "\nTarget: " + target);
+		System.out.println("=======================================================");
+
 		linearSearch(array, length, target);
+		System.out.println("=======================================================");
+
 		binarySearch(array, length, target);
+		System.out.println("=======================================================");
+
 		interpolationSearch(array, length, target);
 
 	}

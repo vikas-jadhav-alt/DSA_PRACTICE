@@ -1,5 +1,8 @@
 package com.vj.searching_and_sorting.searching.problems;
 
+//#Tags:
+//#Array #BinarySearch
+
 //LeetCode: 34: 
 //https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/submissions/1605903289/
 
@@ -18,6 +21,14 @@ class Solution {
 			arr[1] = findIndexOfTarget(nums, target, false);
 
 		return arr;
+
+		/**
+		 * 1. if arr[0] == -1, means target value is itself not present in the array,
+		 * then there is no meaning of calculating it again arr[1] by calling the
+		 * findIndexOfTarget again
+		 * 
+		 * 
+		 **/
 	}
 
 	public int findIndexOfTarget(int[] nums, int target, boolean isLeftIndex) {
@@ -32,6 +43,7 @@ class Solution {
 			else if (nums[mid] > target)
 				end = mid - 1;
 			else {
+				// ** important point lies here
 				index = mid;
 				if (isLeftIndex == true)
 					end = mid - 1;

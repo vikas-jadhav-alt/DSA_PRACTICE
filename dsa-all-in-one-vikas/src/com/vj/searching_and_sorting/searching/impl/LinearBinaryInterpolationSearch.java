@@ -1,4 +1,4 @@
-package com.vj.searching_and_sorting.searching;
+package com.vj.searching_and_sorting.searching.impl;
 
 import java.util.Arrays;
 

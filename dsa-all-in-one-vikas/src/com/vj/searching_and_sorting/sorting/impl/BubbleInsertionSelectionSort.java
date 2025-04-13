@@ -1,4 +1,4 @@
-package com.vj.searching_and_sorting.sorting;
+package com.vj.searching_and_sorting.sorting.impl;
 
 import java.util.*;
 
